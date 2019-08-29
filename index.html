@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Trello</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Masthead -->
+    <header class="masthead">
+        <div class="boards-menu">
+            <div class="board-search">
+                <input type="search" class="board-search-input" aria-label="Board Search">
+                <i class="fas fa-search search-icon" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="logo">
+            <h1><i class="fab fa-trello logo-icon" aria-hidden="true"></i>Trello</h1>
+        </div>
+        <div class="user-settings" style="height: 20px;margin-bottom:35px;">
+            <a href="profile.html">
+                <img src="https://img.icons8.com/wired/64/000000/settings.png">
+            </a>
+        </div>
+    </header>
+    <!-- Lists container -->
+    <section class="lists-container">
+        <div class="list">
+            <h3 class="list-title">Tasks to Do</h3>
+            <ul class="list-items" id="parent">
+                <li> client website</li>
+                <li>Email client for feedback</li>
+            </ul>
+            <button class="add-card-btn btn">Add a card</button>
+        </div>
+        <div class="list">
+            <h3 class="list-title">Completed Tasks</h3>
+            <ul class="list-items" id="parent1">
+                <li>Clear email inbox</li>
+                <li>client web design</li>
+                <li> for client website</li>
+                <li>Client call@ 5</li>
+            </ul>
+            <button class="add-card-btn btn">Add a card</button>
+        </div>
+        <div class="list">
+            <h3 class="list-title">Topics/Concepts to Revise</h3>
+            <ul class="list-items" id="parent">
+                <li>HTML Elements</li>
+                <li>HTML Form Validation</li>
+                <li>HTML Structured Data</li>
+            </ul>
+            <button class="add-card-btn btn">Add a card</button>
+        </div>
+        <button class="add-list-btn btn">Add a list</button>
+    </section>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script/script.js">
+
+    </script>
+</body>
+
+</html>
