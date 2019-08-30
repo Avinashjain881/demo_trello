@@ -28,32 +28,33 @@
     </header>
     <!-- Lists container -->
     <section class="lists-container">
-        <div class="list">
+        <div class="list" id="dragabble_card">
+            <h3 class="list-title">Add A New Card</h3>
+            <ul class="list-items" id="parent">
+                <li class="editableLi" id="repeatTHIS">Add Data </li>
+                <li class="editableLi">Add data...</li>
+                <li class="editableLi">Add data...</li>
+            </ul>
+            <button class="add-card-btn btn" id="button" onclick="repeat()">Add a card</button>
+        </div>
+        <div class="list" id="dragabble_card1">
+            <h3 class="list-title">Completed Tasks</h3>
+            <ul class="list-items" id="parent">
+                <li class="editableLi">Add data...</li>
+                <li class="editableLi">Add data...</li>
+                <li class="editableLi">Add data...</li>
+            </ul>
+            <button class="add-card-btn btn" id="button" onclick="repeat()">Add a card</button>
+        </div>
+        <div class="list" id="dragabble_card">
             <h3 class="list-title">Tasks to Do</h3>
             <ul class="list-items" id="parent">
-                <li> client website</li>
-                <li>Email client for feedback</li>
+                <li class="editableLi">Add data..</li>
+                <li class="editableLi">Add data...</li>
+                <li class="editableLi">Add data...</li>
+                <li class="editableLi">Add data...</li>
             </ul>
-            <button class="add-card-btn btn">Add a card</button>
-        </div>
-        <div class="list">
-            <h3 class="list-title">Completed Tasks</h3>
-            <ul class="list-items" id="parent1">
-                <li>Clear email inbox</li>
-                <li>client web design</li>
-                <li> for client website</li>
-                <li>Client call@ 5</li>
-            </ul>
-            <button class="add-card-btn btn">Add a card</button>
-        </div>
-        <div class="list">
-            <h3 class="list-title">Topics/Concepts to Revise</h3>
-            <ul class="list-items" id="parent">
-                <li>HTML Elements</li>
-                <li>HTML Form Validation</li>
-                <li>HTML Structured Data</li>
-            </ul>
-            <button class="add-card-btn btn">Add a card</button>
+            <button class="add-card-btn btn" id="button" onclick="repeat()">Add a card</button>
         </div>
         <button class="add-list-btn btn">Add a list</button>
     </section>
