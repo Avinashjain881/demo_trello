@@ -5,8 +5,8 @@
     <title>SignUp</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="/css/style.css" rel="stylesheet">
-    <link href="/css/signup.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="signup.css" rel="stylesheet">
 </head>
 
 <body>
@@ -17,15 +17,15 @@
         </div>
     </header>
     <section class="signup-login">
-        <form action="">
+        <form action="/public/register-controller" method="POST">
             <div class="username">
-                <input type="text" placeholder="User Name"></input>
+                <input type="text" placeholder="User Name" name="name"></input>
             </div>
             <div class="username">
-                <input type="email" placeholder="Email"></input>
+                <input type="email" placeholder="Email" name="email" id="email"></input>
             </div>
             <div class="username">
-                <input type="password" placeholder="Password"></input>
+                <input type="password" placeholder="Password" name="password" id="password"></input>
             </div>
             <div class="button-signup-login">
                 <button class="add-card-btn btn">Sign Up</button>

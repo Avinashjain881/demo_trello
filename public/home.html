@@ -5,7 +5,8 @@
     <title>Trello</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="/css/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -20,49 +21,53 @@
         <div class="logo">
             <h1><i class="fab fa-trello logo-icon" aria-hidden="true"></i>Trello</h1>
         </div>
-        <div class="user-settings" style="height: 20px;margin-bottom:35px;">
-            <a href="profile.html">
-                <img src="https://img.icons8.com/wired/64/000000/settings.png">
+        <div class="setting-class">
+            <a href="./profile.html">
+                <h2 style="color: aliceblue;margin-right: 20px;">Profile</h2>
             </a>
         </div>
     </header>
     <!-- Lists container -->
     <section class="lists-container">
         <div class="list" id="dragabble_card">
-            <h3 class="list-title">Add A New Card</h3>
+            <h3 class="list-title">Tasks</h3>
             <ul class="list-items" id="parent">
-                <li class="editableLi" id="repeatTHIS">Add Data </li>
-                <li class="editableLi">Add data...</li>
-                <li class="editableLi">Add data...</li>
+                <li id="editableLi"> Add ...</li>
+                <li id="editableLi"> Add ...</li>
+                <li id="editableLi"> Add ...</li>
+                <li id="editableLi"> Add ...</li>
+                <li id="editableLi"> Add ...</li>
             </ul>
-            <button class="add-card-btn btn" id="button" onclick="repeat()">Add a card</button>
+            <button class="add-card-btn btn" id="button" onclick="createEditableLi()">Add a card</button>
         </div>
         <div class="list" id="dragabble_card1">
             <h3 class="list-title">Completed Tasks</h3>
             <ul class="list-items" id="parent">
-                <li class="editableLi">Add data...</li>
-                <li class="editableLi">Add data...</li>
-                <li class="editableLi">Add data...</li>
+                <li id="editableLi"> Add ...</li>
+                <li id="editableLi"> Add ...</li>
+                <li id="editableLi"> Add ...</li>
+                <li id="editableLi"> Add ...</li>
+                <li id="editableLi"> Add ...</li>
             </ul>
-            <button class="add-card-btn btn" id="button" onclick="repeat()">Add a card</button>
+            <button class="add-card-btn btn" id="button" onclick="createEditableLi()">Add a card</button>
         </div>
         <div class="list" id="dragabble_card">
             <h3 class="list-title">Tasks to Do</h3>
             <ul class="list-items" id="parent">
-                <li class="editableLi">Add data..</li>
-                <li class="editableLi">Add data...</li>
-                <li class="editableLi">Add data...</li>
-                <li class="editableLi">Add data...</li>
+                <li id="editableLi"> Add ...</li>
+                <li id="editableLi"> Add ...</li>
+                <li id="editableLi"> Add ...</li>
+                <li id="editableLi"> Add ...</li>
+                <li id="editableLi"> Add ...</li>
             </ul>
-            <button class="add-card-btn btn" id="button" onclick="repeat()">Add a card</button>
+            <button class="add-card-btn btn" id="button" onclick="createEditableLi()">Add a card</button>
         </div>
         <button class="add-list-btn btn">Add a list</button>
     </section>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="script/script.js">
-
-    </script>
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

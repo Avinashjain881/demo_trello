@@ -5,8 +5,8 @@
     <title>Login</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="/css/style.css" rel="stylesheet">
-    <link href="/css/signup.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="signup.css" rel="stylesheet">
 </head>
 
 <body>
@@ -17,20 +17,23 @@
         </div>
     </header>
     <section class="signup-login">
-        <form action="">
+        <form action="/public/authenticate-controller" method="POST">
             <div class="username">
-                <input type="email" placeholder="Email"></input>
+                <input type="email" placeholder="Email" name="email"></input>
             </div>
             <div class="username">
-                <input type="password" placeholder="Password"></input>
+                <input type="password" placeholder="Password" name="password"></input>
             </div>
             <div class="button-signup-login">
-                <button class="add-card-btn btn">Log In</button>
-                <a href="signup.html">New user?</a>
+                <button class="add-card-btn btn" type="submit" onclick="click()">Log In</button>
+                <a href="index.html">New user?</a>
             </div>
 
         </form>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/public/script.js"></script>
+
 </body>
 
 </html>
