@@ -6,6 +6,7 @@ var jwt = require('jsonwebtoken');
 var connection = require('./../config');
 const cookieParser = require('cookie-parser');
 
+
 module.exports.authenticate = function (req, res) {
     var email = req.body.email;
     var password = req.body.password;
@@ -33,6 +34,7 @@ module.exports.authenticate = function (req, res) {
                             res.cookie('Auth', 'true');
                             res.cookie('UName', email);
                             res.redirect('/home.html');
+
                         }
 
                     );

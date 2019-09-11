@@ -1,4 +1,8 @@
-
+//display username on home screen
+let name = Cookies.get('UName');
+let dis = name.split('@');
+let dispname = dis[0];
+document.getElementById('Uname').innerHTML = dispname;
 //card dragable
 $(function () {
     $("#parent, #parent1").sortable({
@@ -37,7 +41,7 @@ document.addEventListener("click", function (e) { //Of course you can merge this
 
             path[i].addEventListener("click", function () {
                 if (this.getAttribute("contenteditable") != "true") {
-                    var wantEdit = window.confirm("You want to edit this element content ?");
+                    var wantEdit = window.confirm("You want to edit this card content ?");
                     if (wantEdit) {
                         this.setAttribute("contenteditable", true);
                         window.isEditingALi = this;
@@ -78,7 +82,6 @@ function createEditableLi() {
     const ul = document.querySelector("ul");
     const newLi = document.createElement("li");
     newLi.setAttribute("id", "editableLi");
-    newLi.innerHTML = "New Li";
     ul.appendChild(newLi);
 }
 
