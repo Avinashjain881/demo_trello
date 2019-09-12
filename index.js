@@ -5,6 +5,7 @@ var connection = require('./config');
 var app = express();
 var authenticateController = require('./public/authenticate-controller');
 var registerController = require('./public/register-controller');
+var cardcontroller = require('./public/card-controller');
 var dir = path.join(__dirname, 'public');
 
 
@@ -17,4 +18,5 @@ app.use(express.static(dir));
 console.log(authenticateController);
 app.post('/public/register-controller', registerController.register);
 app.post('/public/authenticate-controller', authenticateController.authenticate);
+app.post('/public/card-controller', cardcontroller.card);
 app.listen(8012);

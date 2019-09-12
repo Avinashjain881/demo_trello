@@ -66,10 +66,6 @@ document.addEventListener("click", function (e) {
     }
     if (canGetReset && window.isEditingALi) {
         window.isEditingALi.removeAttribute("contenteditable");
-
-        //Here you can add your Ajax request or whatever function you want to do after the user finish editing the li ..
-
-
         window.isEditingALi = false;
 
     }

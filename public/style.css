@@ -292,3 +292,9 @@ sboard-info-bar .btn {
 .add-list-btn::after {
     content: '...';
 }
+
+.input-style {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
